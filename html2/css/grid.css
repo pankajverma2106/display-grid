@@ -1,0 +1,118 @@
+/*common css starts*/
+.logo-area {
+  justify-self: center;
+  align-self: center;
+}
+
+.top-nav {
+  display: grid;
+  grid: subgrid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.common-subgrid {
+  display: grid;
+}
+
+.common-subgrid> div {
+  justify-self: center;
+  align-self: center;
+  padding: 15px;
+}
+
+/*common css end*/
+
+.ruby-on-rails {
+  grid-area: ruby-on-rails;
+}
+.logo-area {
+  grid-area: logo-area;
+}
+.get-in-touch {
+  grid-area: get-in-touch;
+}
+.top-nav {
+  grid-area: top-nav;
+}
+.slider-area {
+  grid-area: slider-area;
+}
+.brand-trust {
+  grid-area: brand-trust;
+}
+.our-partners {
+  grid-area: our-partners;
+}
+.work-with-us {
+  grid-area: work-with-us;
+}
+.footer {
+  grid-area: footer;
+}
+
+/*main structure css*/
+.grid-container {
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  -webkit-transition: all .5s ease; /* Safari */
+  transition: all .5s ease;
+
+
+  /*structure*/
+  grid-template-areas:
+    "ruby-on-rails logo-area get-in-touch top-nav"
+
+    "slider-area slider-area brand-trust brand-trust"
+
+    "our-partners work-with-us work-with-us footer";
+  /*structure*/
+}
+/*main structure css*/
+
+@media screen and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    /*structure*/
+    grid-template-areas:
+      "ruby-on-rails logo-area  top-nav"
+
+      "slider-area slider-area slider-area"
+      "brand-trust brand-trust brand-trust"
+      "work-with-us work-with-us work-with-us"
+
+      "get-in-touch our-partners  footer";
+    /*structure*/
+  }
+}
+@media screen and (max-width: 767px) {
+
+  .ruby-on-rails {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 250px;
+    grid-auto-rows: auto;
+
+    /*structure*/
+    grid-template-areas:
+      "logo-area"
+      "top-nav"
+      "slider-area"
+      "brand-trust"
+      "work-with-us"
+      "our-partners"
+      "get-in-touch"
+      "footer";
+    /*structure*/
+  }
+}
+
+

@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  outline: none !important;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 13px;
+}
+strong {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+p, ul {
+  margin: 10px 0;
+}
+
+.ruby-on-rails {
+  background: url(../images/ruby-on-rail.jpg) no-repeat center center;
+  background-size: cover;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.logo-area a {
+  display: block;
+  width: 200px;
+  background: url(../images/vinsol-logo.png) no-repeat left top;
+  background-size: 100% auto;
+  padding-top: 70px;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-transition: all .5s ease; /* Safari */
+  transition: all .5s ease;
+}
+.logo-area a:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.get-in-touch {
+  background-color: #f5f5f5;
+}
+.get-in-touch a {
+  color: #fd7628;
+}
+
+.top-nav {
+  background-color: #fd7628;
+}
+.top-nav a {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: all .5s ease; /* Safari */
+  transition: all .5s ease;
+}
+.top-nav a:hover  {
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.1) !important;
+}
+
+.top-nav a:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.top-nav a:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.top-nav a:nth-child(3) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.top-nav a:nth-child(4) {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.top-nav a:nth-child(5) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.top-nav a:nth-child(6) {
+  background-color: rgba(255, 255, 255, .0);
+}
+
+.top-nav a img {
+  display: block;
+  margin: 0 auto;
+  max-height: 25px;
+  position: relative;
+}
+
+
+
+
+.slider-area {
+  position: relative;
+}
+.brand-trust {
+  background-color: #fafafa;
+}
+
+.our-partners {
+  background-color: white
+}
+
+.work-with-us {
+  background-color: #333333;
+  color: white;
+}
+
+.work-with-us h2,
+.work-with-us p,
+.work-with-us ul {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+.work-with-us h2,
+.work-with-us p {
+  text-align: center;
+}
+.work-with-us ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0
+}
+.work-with-us ul li {
+  display: inline-block;
+  width: 230px;
+  padding: 2px 0 0 45px;
+  position: relative;
+  margin: 7px 0;
+  font-size: 14px;
+  font-weight: 800;
+}
+.work-with-us ul li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-height: 25px;
+}
+
+.footer {
+  background-color: #999999;
+}
+
+.vinsol-slider {
+  height: 100%;
+  width: 50vw;
+}
+.vinsol-slider .slick-list,
+.vinsol-slider .slick-track {
+  height: 100%;
+}
+.vinsol-slide {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.vinsol-slide.slide1 {
+  background-image: url(../images/wework.jpg);
+}
+.vinsol-slide.slide2 {
+  background-image: url(../images/chipotle.jpg);
+}
+.vinsol-slide.slide3 {
+  background-image: url(../images/brodboksen.jpg);
+}
+.vinsol-slider .slick-dots {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: calc(100% - 30px);
+  text-align: right;
+}
+.vinsol-slider .slick-dots li {
+  padding: 0 5px;
+  height: 6px;
+  overflow: hidden;
+  display: inline-block;
+}
+.vinsol-slider .slick-dots li button {
+  width: 50px;
+  height: 6px;
+  text-indent: -9999px;
+  border-radius: 0;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+.vinsol-slider .slick-dots li.slick-active button {
+  background-color: #FF760F;
+}
+.vinsol-slider .slide-content {
+  max-width: 50%;
+  padding: 50px 50px 0 50px;
+}
+.vinsol-slider .slide-content .slide-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+  padding-bottom: 20px;
+}
+.vinsol-slider .slide-content .slide-button a {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: solid 1px black;
+  color: black;
+  -webkit-transition: all .5s ease; /* Safari */
+  transition: all .5s ease;
+}
+.vinsol-slider .slide-content .slide-button a:hover {
+  color: white;
+  border-color: #FF760F;
+  background-color: #FF760F;
+  text-decoration: none;
+}
+
+
+.home-image-list {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.home-image-list.brands-logos li {
+  width: 25%;
+  padding: 5px;
+}
+.home-image-list.partners-logos li {
+  width: 50%;
+  padding: 5px;
+}
+.home-image-list li img  {
+  max-width: 100%;
+  max-height: 50px;
+  padding: 10px 10px 0 10px;
+  display: block;
+  margin: 0 auto;
+}
+.home-image-list.partners-logos li img  {
+  max-height: 75px;
+  padding: 5px;
+}
+
+
+.link-list, .social-list {
+  display: inline-block;
+  width: 49.2%;
+  padding: 0 0 5px 0;
+  margin: 0;
+  list-style: none;
+  color: white;
+  font-size: 12px;
+  vertical-align: top;
+}
+.social-list {
+  padding-bottom: 0;
+}
+.link-list a, .social-list a{
+  color: white;
+  -webkit-transition: all .5s ease; /* Safari */
+  transition: all .5s ease;
+}
+.link-list a:hover, .social-list a:hover{
+  color: black;
+  text-decoration: none;
+}
+.link-list li {
+  display: block;
+}
+.link-list li h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0;
+}
+.social-list li {
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+.social-list li .fa {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1023px) {
+  .vinsol-slider {
+    height: 100%;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .vinsol-slider {
+    height: auto;
+    width: 100vw;
+  }
+
+  .vinsol-slider .slick-list,
+  .vinsol-slider .slick-track {
+    height: inherit;
+  }
+  .vinsol-slider .slide-content {
+    max-width: initial;
+    padding: 50px;
+  }
+
+  .vinsol-slide.slide1 {
+    background-image: url(../images/wework-responsive.jpg);
+  }
+  .vinsol-slide.slide2 {
+    background-image: url(../images/chipotle-responsive.jpg);
+  }
+  .vinsol-slide.slide3 {
+    background-image: url(../images/brodboksen-responsive.jpg);
+  }
+
+  .work-with-us ul li {
+    display: block;
+    margin: 15px auto;
+  }
+  .home-image-list.brands-logos li {
+    width: 50%;
+    padding: 10px;
+  }
+}
