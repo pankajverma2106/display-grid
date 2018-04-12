@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display: Grid</title>
+<style>
+.grid-container  {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 150px 200px 150px;
+}
+.example {
+  justify-self:;
+}
+.example1 {
+  justify-self: stretch;
+}
+.example2 {
+  justify-self: start;
+}
+.example3 {
+  justify-self: end;
+}
+.example4 {
+  justify-self: center;
+}
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+
+
+<h1 align="center"> Display : Grid <small>
+  <mark>(Child Properties)</mark>
+  </small></h1>
+
+<h2 class="wrapper">
+.item {<br>
+&nbsp;&nbsp;justify-self: start | end | center | stretch;<br>
+}
+</h2>
+
+<ul class="note">
+  <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+  <li> <span class="one"></span>Grid-Item </li>
+  <li> <span class="two"></span>Grid-Item </li>
+  <li> <span class="three"></span>Grid-Item </li>
+  <li> <span class="four"></span>Grid-Item </li>
+  <li> <span class="five"></span>Grid-Item </li>
+</ul>
+
+<div class="wrapper">
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 150px 200px 150px;
+}
+.example {
+  justify-self:;
+}</pre>
+
+  <div class="grid-container zero">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five example">Example</div>
+    <div class="grid-item one">6</div>
+    <div class="grid-item two">7</div>
+    <div class="grid-item three">8</div>
+    <div class="grid-item four">9</div>
+    <div class="grid-item five">10</div>
+  </div>
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 150px 200px 150px;
+}
+.example1 {
+  justify-self: stretch;
+}</pre>
+
+  <div class="grid-container zero">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five example1">Example1</div>
+    <div class="grid-item one">6</div>
+    <div class="grid-item two">7</div>
+    <div class="grid-item three">8</div>
+    <div class="grid-item four">9</div>
+    <div class="grid-item five">10</div>
+  </div>
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 150px 200px 150px;
+}
+.example2 {
+  justify-self: start;
+}</pre>
+
+  <div class="grid-container zero">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five example2">Example2</div>
+    <div class="grid-item one">6</div>
+    <div class="grid-item two">7</div>
+    <div class="grid-item three">8</div>
+    <div class="grid-item four">9</div>
+    <div class="grid-item five">10</div>
+  </div>
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 150px 200px 150px;
+}
+.example3 {
+  justify-self: end;
+}</pre>
+
+  <div class="grid-container zero">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five example3">Example3</div>
+    <div class="grid-item one">6</div>
+    <div class="grid-item two">7</div>
+    <div class="grid-item three">8</div>
+    <div class="grid-item four">9</div>
+    <div class="grid-item five">10</div>
+  </div>
+
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 150px 200px 150px;
+}
+.example4 {
+  justify-self: center;
+}</pre>
+
+  <div class="grid-container zero">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five example4">Example4</div>
+    <div class="grid-item one">6</div>
+    <div class="grid-item two">7</div>
+    <div class="grid-item three">8</div>
+    <div class="grid-item four">9</div>
+    <div class="grid-item five">10</div>
+  </div>
+</div>
+</body>
+</html>

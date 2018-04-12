@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display: Grid</title>
+<style>
+  .grid-container  {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto;
+  }
+  .column-line {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .row-line {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+
+
+<h1 align="center"> Display : Grid <small>
+  <mark>(Parent Properties)</mark>
+  </small></h1>
+
+<h2 class="wrapper">
+The line between columns are called column lines.
+<br>
+The line between rows are called row lines.
+</h2>
+
+<h2 align="center">
+  <img src="images/grid-lines.jpg" align="center">
+</h2>
+
+<ul class="note">
+  <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+  <li> <span class="one"></span>Grid-Item </li>
+  <li> <span class="two"></span>Grid-Item </li>
+  <li> <span class="three"></span>Grid-Item </li>
+  <li> <span class="four"></span>Grid-Item </li>
+  <li> <span class="five"></span>Grid-Item </li>
+</ul>
+
+
+<div class="wrapper">
+
+<pre class="code-area">
+.column-line {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}</pre>
+
+  <div class="grid-container zero">
+    <div class="grid-item one column-line">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+<pre class="code-area">
+.row-line {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}</pre>
+
+  <div class="grid-container zero">
+    <div class="grid-item one row-line">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five ">5</div>
+  </div>
+
+</div>
+</body>
+</html>

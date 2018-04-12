@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display Flex</title>
+<style>
+.flex-parent {
+	display: flex;
+	flex-wrap: wrap;
+}
+.one {
+	order: 2;
+}
+.two {
+	order: 5;
+}
+.three {
+	order: 1;
+}
+.four {
+	order: 3;
+}
+.five {
+	order: 4;
+}
+
+
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a href="#" class="direction-link prev" onclick="window.history.go(-1)">&#8249;</a> <a href="index28.html" class="direction-link next">&#8250;</a>
+<h1 align="center"> Display : Flex <small><mark>(Child Properties)</mark> </small></h1>
+<ul class="note">
+  <li> <span class="zero"></span><strong>Flex-Parent</strong> </li>
+  <li> <span class="one"></span>Flex-Item </li>
+  <li> <span class="two"></span>Flex-Item </li>
+  <li> <span class="three"></span>Flex-Item </li>
+  <li> <span class="four"></span>Flex-Item </li>
+  <li> <span class="five"></span>Flex-Item </li>
+</ul>
+<div class="wrapper">
+  <pre>
+      .flex-parent {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .one {
+        order: 2;
+      }
+      .two {
+        order: 5;
+      }
+      .three {
+        order: 1;
+      }
+      .four {
+        order: 3;
+      }
+      .five {
+        order: 4;
+      }
+    
+  </pre>
+</div>
+<div class="wrapper">
+  <div class="flex-parent">
+  
+    <div class="flex-item common-styling one">
+      one 
+    </div>
+    <div class="flex-item common-styling two">
+      two
+    </div>
+    <div class="flex-item common-styling three"> 
+      three
+    </div>
+    <div class="flex-item common-styling four">
+      four
+    </div>
+    <div class="flex-item common-styling five">
+      five
+    </div>
+
+    
+    
+  </div>
+</div>
+</body>
+</html>

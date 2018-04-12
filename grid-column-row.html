@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display: Grid</title>
+<style>
+  .grid-container  {
+    display: grid;
+    grid-template-columns: 50px 100px auto 100px 50px;
+    grid-gap: 5px;
+
+  }
+  .example1 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / 4;
+    background-color: pink !important;
+  }
+  .example2 {
+    grid-column: 3 / span 3;
+    grid-row: 3 / 4;
+    background-color: pink !important;
+  }
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+
+
+<h1 align="center"> Display : Grid <small>
+  <mark>(Child Properties)</mark>
+  </small></h1>
+
+<h2 class="wrapper">
+  row span | col span | placement
+</h2>
+<h2 class="wrapper">
+.item {<br>
+&nbsp;&nbsp;grid-column: start-line / end-line <br>
+&nbsp;&nbsp;grid-row: start-line / end-line<br>
+}
+</h2>
+
+<ul class="note">
+  <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+  <li> <span class="one"></span>Grid-Item </li>
+  <li> <span class="two"></span>Grid-Item </li>
+  <li> <span class="three"></span>Grid-Item </li>
+  <li> <span class="four"></span>Grid-Item </li>
+  <li> <span class="five"></span>Grid-Item </li>
+</ul>
+
+<div class="wrapper">
+
+  <pre class="code-area">
+  .example1 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / 4;
+  }</pre>
+  <div class="grid-container zero">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two example1"><h3>2 Example1</h3></div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">6</div>
+    <div class="grid-item two">7</div>
+    <div class="grid-item three">8</div>
+    <div class="grid-item four">9</div>
+    <div class="grid-item five">10</div>
+    <div class="grid-item one">11</div>
+    <div class="grid-item two">12</div>
+    <div class="grid-item three">13</div>
+    <div class="grid-item four">14</div>
+    <div class="grid-item five">15</div>
+    <div class="grid-item one">16</div>
+    <div class="grid-item two">17</div>
+    <div class="grid-item three">18</div>
+    <div class="grid-item four">19</div>
+    <div class="grid-item five">20</div>
+  </div>
+
+  <pre class="code-area">
+  .example2 {
+    grid-column: 3 / span 3;
+    grid-row: 3 / 4;
+    background-color: pink !important;
+  }</pre>
+  <div class="grid-container zero">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two example2"><h3>2 Example2</h3></div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">6</div>
+    <div class="grid-item two">7</div>
+    <div class="grid-item three">8</div>
+    <div class="grid-item four">9</div>
+    <div class="grid-item five">10</div>
+    <div class="grid-item one">11</div>
+    <div class="grid-item two">12</div>
+    <div class="grid-item three">13</div>
+    <div class="grid-item four">14</div>
+    <div class="grid-item five">15</div>
+    <div class="grid-item one">16</div>
+    <div class="grid-item two">17</div>
+    <div class="grid-item three">18</div>
+    <div class="grid-item four">19</div>
+    <div class="grid-item five">20</div>
+  </div>
+
+</div>
+</body>
+</html>

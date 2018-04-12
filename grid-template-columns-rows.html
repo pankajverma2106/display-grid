@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display: Grid</title>
+<style>
+.grid-container {
+	display: grid;
+  grid-gap: 1px;
+	grid-template-columns: 40px 50px auto 50px 40px;
+  /*grid-template-columns: repeat(5, 100px);*/
+  grid-template-rows: 200px 100px 50px;
+}
+
+
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+
+
+<h1 align="center"> <a href="flex/index33.html" target="_blank">Display</a> : Grid <small>
+  <mark>(Parent Properties)</mark>
+  </small></h1>
+  <h2 class="wrapper">
+  grid-template-columns:
+  <br>
+  grid-template-rows:
+  </h2>
+
+<ul class="note">
+  <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+  <li> <span class="one"></span>Grid-Item </li>
+  <li> <span class="two"></span>Grid-Item </li>
+  <li> <span class="three"></span>Grid-Item </li>
+  <li> <span class="four"></span>Grid-Item </li>
+  <li> <span class="five"></span>Grid-Item </li>
+</ul>
+<div class="wrapper">
+<pre class="code-area">
+.grid-container {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 200px 100px 50px;
+}</pre>
+</div>
+<div class="wrapper">
+  <div class="grid-container zero">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+
+
+  </div>
+</div>
+</body>
+</html>

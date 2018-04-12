@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Display: Grid</title>
+  <style>
+  .grid-container {
+   display: grid;
+ }
+ </style>
+ <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+  <h1 align="center"> <a href="flex/index1.html" target="_blank">Display</a> : Grid <small>Browser Support</small>
+    <div class="wrapper"><img src="images/browser-support.jpg"></div>
+    <hr>
+    <h1 align="center"> Grid Container - from: <small>css-tricks & w3school</small></h1>
+    <h2 align="center">Note: column, float, clear, and vertical-align have no effect on a grid item.</h2>
+    <ul class="note">
+      <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+      <li> <span class="one"></span>Grid-Item </li>
+      <li> <span class="two"></span>Grid-Item </li>
+      <li> <span class="three"></span>Grid-Item </li>
+      <li> <span class="four"></span>Grid-Item </li>
+      <li> <span class="five"></span>Grid-Item </li>
+    </ul>
+
+    <div class="wrapper">
+      <pre class="code-area">.grid-container { display: grid; }</pre>
+      <div class="grid-container zero">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <pre class="code-area">.grid-container { display: inline-grid; }</pre>
+      <div class="grid-container zero" style="display:inline-grid;">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+      <pre class="code-area">.grid-container { display: grid; height: 500px;}</pre>
+      <div class="grid-container zero height500">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <pre class="code-area">.grid-container { display: inline-grid;  height: 500px;}</pre>
+      <div class="grid-container zero height500" style="display:inline-grid;">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <pre class="code-area">.grid-container { display: grid; min-height: 500px;}</pre>
+      <div class="grid-container zero min-height500">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <pre class="code-area">.grid-container { display: inline-grid;  min-height: 500px;}</pre>
+      <div class="grid-container zero min-height500" style="display:inline-grid;">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+  </html>

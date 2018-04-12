@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display: Grid</title>
+<style>
+  .grid-container  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+
+
+<h1 align="center"> Display : Grid <small>
+  <mark>(Parent Properties)</mark>
+  </small></h1>
+
+<h2 class="wrapper">
+grid-column-gap:<br>
+grid-row-gap:<br>
+grid-gap:
+</h2>
+
+<ul class="note">
+  <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+  <li> <span class="one"></span>Grid-Item </li>
+  <li> <span class="two"></span>Grid-Item </li>
+  <li> <span class="three"></span>Grid-Item </li>
+  <li> <span class="four"></span>Grid-Item </li>
+  <li> <span class="five"></span>Grid-Item </li>
+</ul>
+
+
+<div class="wrapper">
+
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}</pre>
+
+  <div class="grid-container zero" style="grid-column-gap: 20px;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 20px;
+}</pre>
+
+  <div class="grid-container zero" style="grid-row-gap: 20px;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px 40px;
+}</pre>
+
+  <div class="grid-container zero" style="grid-gap: 20px 40px;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 25px;
+}</pre>
+
+  <div class="grid-container zero" style="grid-gap: 25px;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+</div>
+</body>
+</html>

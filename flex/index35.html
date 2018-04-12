@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display Flex</title>
+<style>
+.flex-parent {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-item {
+	flex: 1 1 auto;
+}
+.three {
+	align-self: center;
+}
+
+
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a href="#" class="direction-link prev" onclick="window.history.go(-1)">&#8249;</a><!-- <a href="index35.html" class="direction-link next">&#8250;</a>-->
+<h1 align="center"> Display : Flex <small><mark>(Child Properties)</mark> </small></h1>
+<ul class="note">
+  <li> <span class="zero"></span><strong>Flex-Parent</strong> </li>
+  <li> <span class="one"></span>Flex-Item </li>
+  <li> <span class="two"></span>Flex-Item </li>
+  <li> <span class="three"></span>Flex-Item </li>
+  <li> <span class="four"></span>Flex-Item </li>
+  <li> <span class="five"></span>Flex-Item </li>
+</ul>
+<div class="wrapper">
+  <pre>
+    .flex-parent {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .flex-item {
+      flex: 1 1 auto;
+    }
+    .three {
+      align-self: center;
+    }
+  </pre>
+</div>
+<div class="wrapper">
+  <div class="flex-parent">
+    <div class="flex-item common-styling one">
+      1 
+    </div>
+    <div class="flex-item common-styling two">
+      2
+    </div>
+    <div class="flex-item common-styling three"> 
+      3
+    </div>
+    <div class="flex-item common-styling four">
+      4
+    </div>
+    <div class="flex-item common-styling five">
+      5
+    </div>
+  </div>
+</div>
+</body>
+</html>

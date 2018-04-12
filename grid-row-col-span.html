@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display: Grid</title>
+<style>
+  .grid-container  {
+    display: grid;
+    padding: 5px;
+    grid-gap: 5px 5px;
+    grid-template-columns:  100px 100px 100px 100px;
+    grid-auto-columns: 40px;
+    grid-auto-rows: 40px;
+  }
+  .grid-item.one {
+    grid-area: 10 / 11 / 13 / 14;
+  }
+
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+
+
+<h1 align="center"> Display : Grid <small>
+  <mark>(Parent Properties)</mark>
+  </small></h1>
+<h2 class="wrapper">
+  Merging cells and change placement
+</h2>
+
+<ul class="note">
+  <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+  <li> <span class="one"></span>Grid-Item </li>
+  <li> <span class="two"></span>Grid-Item </li>
+  <li> <span class="three"></span>Grid-Item </li>
+  <li> <span class="four"></span>Grid-Item </li>
+  <li> <span class="five"></span>Grid-Item </li>
+</ul>
+
+<div class="wrapper">
+
+  <pre class="code-area">
+  .grid-container  {
+    display: grid;
+    padding: 5px;
+    grid-gap: 5px 5px;
+    grid-template-columns:  100px 100px 100px 100px;
+    grid-auto-columns: 40px;
+    grid-auto-rows: 40px;
+  }
+  .grid-item.one {
+    grid-area: 10 / 11 / 13 / 14;
+  }</pre>
+  <div class="grid-container grid-bg zero">
+    <div class="grid-item one">Pankaj</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+    <div class="grid-item">10</div>
+    <div class="grid-item">11</div>
+    <div class="grid-item">12</div>
+    <div class="grid-item">13</div>
+    <div class="grid-item">14</div>
+    <div class="grid-item">15</div>
+    <div class="grid-item">16</div>
+    <div class="grid-item">17</div>
+    <div class="grid-item">18</div>
+    <div class="grid-item">19</div>
+    <div class="grid-item">20</div>
+  </div>
+</div>
+</body>
+</html>

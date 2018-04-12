@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display: Grid</title>
+<style>
+  .grid-container  {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+
+
+<h1 align="center"> <a href="flex/index16.html" target="_blank">Display</a> : Grid <small>
+  <mark>(Parent Properties)</mark>
+  </small></h1>
+<h2 class="wrapper">
+  align-content: stretch | start | end | center | space-around | space-between | space-evenly
+</h2>
+
+<ul class="note">
+  <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+  <li> <span class="one"></span>Grid-Item </li>
+  <li> <span class="two"></span>Grid-Item </li>
+  <li> <span class="three"></span>Grid-Item </li>
+  <li> <span class="four"></span>Grid-Item </li>
+  <li> <span class="five"></span>Grid-Item </li>
+</ul>
+<div class="wrapper">
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: 300px 200px 100px auto;
+  grid-template-rows: 300px 200px 100px;
+  grid-gap: 20px 50px;
+
+  align-content: stretch;
+}</pre>
+</div>
+<div class="wrapper">
+
+
+  <pre class="code-area">
+  .grid-container  {
+    align-content: stretch;
+  }</pre>
+  <div class="grid-container height500 zero" style="align-content: stretch;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+  <pre class="code-area">
+  .grid-container  {
+    align-content: start;
+  }</pre>
+  <div class="grid-container height500 zero" style="align-content: start;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+  <pre class="code-area">
+  .grid-container  {
+    align-content: end;
+  }</pre>
+  <div class="grid-container height500 zero" style="align-content: end;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+  <pre class="code-area">
+  .grid-container  {
+    align-content: center;
+  }</pre>
+  <div class="grid-container height500 zero" style="align-content: center;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+  <pre class="code-area">
+  .grid-container  {
+    align-content: space-around;
+  }</pre>
+  <div class="grid-container height500 zero" style="align-content: space-around;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+  <pre class="code-area">
+  .grid-container  {
+    align-content: space-between;
+  }</pre>
+  <div class="grid-container height500 zero" style="align-content: space-between;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+  <pre class="code-area">
+  .grid-container  {
+    align-content: space-evenly;
+  }</pre>
+  <div class="grid-container height500 zero" style="align-content: space-evenly;">
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+small {
+	opacity:0.3;
+}
+.wrapper {
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.zero {
+	border: solid 2px #000;
+}
+.one {
+	background-color: #337ab7;
+}
+.two {
+	background-color: #5cb85c;
+}
+.three {
+	background-color: #5bc0de;
+}
+.four {
+	background-color: #f0ad4e;
+}
+.five {
+	background-color: #d9534f;
+}
+
+.common-styling {
+	padding:10px 15px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:2px;
+}
+
+.note {
+	display:block;
+	text-align: center;
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+.note li {
+	display:inline-block;
+	padding:0 10px;
+	vertical-align:middle;
+	font-size:16px;
+
+
+}
+.note li span {
+	display:inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align:middle;
+	margin-right:10px;
+	margin-top:-2px;
+}
+
+.direction-link {
+	display: block;
+	position: fixed;
+	top: 50%;
+	width: 30px;
+	height: 100px;
+	margin-top: -50px;
+	text-align: center;
+	text-decoration: none;
+	color: #AFAFAF;
+	font-size: 36px;
+	background-color: #F7F7F9;
+	border: solid 1px #AFAFAF;
+	padding-top: 25px;
+	transition: all 0.5s ease;
+}
+.direction-link:hover {
+	background-color: #AFAFAF;
+	color: #F7F7F9;
+	width: 50px;
+}
+.direction-link.next {
+	right: 0;
+}
+.direction-link.prev {
+	left: 0;
+}
+
+.flex-parent {
+	height:300px;
+	border:solid 5px #000;
+}

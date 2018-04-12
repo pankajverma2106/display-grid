@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display: Grid</title>
+<style>
+.grid-container  {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 50px 100px 150px;
+  grid-template-areas:
+  "header header header"
+  "sidebar-left main sidebar-right"
+  "footer footer footer";
+}
+.grid-item.header {
+  grid-area: header;
+}
+.grid-item.sidebar-left {
+  grid-area: sidebar-left;
+}
+.grid-item.main {
+  grid-area: main;
+}
+.grid-item.sidebar-right {
+  grid-area: sidebar-right;
+}
+.grid-item.footer {
+  grid-area: footer;
+}
+
+.grid-container1  {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 50px 100px 150px;
+}
+.grid-item.example {
+  grid-area: 2 / 2 / 4 / 4;
+  background-color: black !important;
+  color: white !important;
+}
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="menu-frame">
+    <input type="checkbox" id="main-menu">
+    <label for="main-menu"></label>
+    <iframe src="menu.html" frameborder="0" scrolling="auto" ></iframe>
+  </div>
+
+
+<h1 align="center"> Display : Grid <small>
+  <mark>(Child Properties)</mark>
+  </small></h1>
+
+<h2 class="wrapper">
+.item {<br>
+&nbsp;&nbsp;grid-area: name | row-start / column-start / row-end / column-end<br>
+}
+</h2>
+
+<ul class="note">
+  <li> <span class="zero"></span><strong>Grid-Parent</strong> </li>
+  <li> <span class="one"></span>Grid-Item </li>
+  <li> <span class="two"></span>Grid-Item </li>
+  <li> <span class="three"></span>Grid-Item </li>
+  <li> <span class="four"></span>Grid-Item </li>
+  <li> <span class="five"></span>Grid-Item </li>
+</ul>
+
+<div class="wrapper">
+<pre class="code-area">
+.grid-container  {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 50px 100px 150px;
+  grid-template-areas:
+  "header header header"
+  "sidebar-left main sidebar-right"
+  "footer footer footer";
+
+}
+.grid-item.one {
+  grid-area: header;
+}
+.grid-item.two {
+  grid-area: sidebar-left;
+}
+.grid-item.three {
+  grid-area: main;
+}
+.grid-item.four {
+  grid-area: sidebar-right;
+}
+.grid-item.five {
+  grid-area: footer;
+}</pre>
+
+  <div class="grid-container zero">
+    <div class="grid-item one header">1</div>
+    <div class="grid-item two sidebar-left">2</div>
+    <div class="grid-item three main">3</div>
+    <div class="grid-item four sidebar-right">4</div>
+    <div class="grid-item five footer">5</div>
+  </div>
+
+<pre class="code-area">
+.grid-container1  {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 50px 100px 150px;
+}
+.grid-item.example {
+  grid-area: 2 / 2 / 4 / 4;
+  background-color: black !important;
+  color: white !important;
+}</pre>
+
+  <div class="grid-container1 zero">
+    <div class="grid-item one example">1</div>
+    <div class="grid-item two">2</div>
+    <div class="grid-item three">3</div>
+    <div class="grid-item four">4</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item one">6</div>
+    <div class="grid-item two">7</div>
+    <div class="grid-item three">8</div>
+    <div class="grid-item four">9</div>
+    <div class="grid-item five">10</div>
+  </div>
+</div>
+</body>
+</html>
